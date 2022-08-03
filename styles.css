@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 
-@import '/styles/basic.css';
-@import '/styles/todo.css';
-@import '/styles/variables.css';
+@import './styles/basic.css';
+@import './styles/todo.css';
+@import './styles/variables.css';
