@@ -1,0 +1,120 @@
+.todo {
+  margin: 40px 10px 0px 10px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  background: var(--color-dark);
+  -webkit-box-shadow: -11px 7px 13px 6px rgba(34, 60, 80, 0.4);
+  -moz-box-shadow: -11px 7px 13px 6px rgba(34, 60, 80, 0.4);
+  box-shadow: -11px 7px 13px 6px rgba(34, 60, 80, 0.4);
+}
+.todo_title {
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Nanum Brush Script', cursive;
+}
+.todo_input-add,
+.todo_button-add,
+.todo_input-search,
+.todo_button-showall,
+.todo_button-showcomp,
+.todo_button-deleteall,
+.todo_button-deletelast {
+  padding: 0.4em;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.todo_button-add,
+.todo_button-showall,
+.todo_button-showcomp,
+.todo_button-deleteall,
+.todo_button-deletelast {
+  transition: background 0.4s ease-in-out;
+  cursor: pointer;
+}
+.todo_button-add:hover,
+.todo_button-showall:hover,
+.todo_button-showcomp:hover,
+.todo_button-deleteall:hover,
+.todo_button-deletelast:hover {
+  background: var(--color-grey);
+}
+
+.todo_input-add,
+.todo_input-search,
+.todo_button-add,
+.todo_button-deleteall,
+.todo_button-deletelast {
+  width: 100%;
+}
+.todo_add-block {
+  width: 100%;
+  display: flex;
+}
+
+.todo_buttons {
+  width: 100%;
+  display: flex;
+}
+
+.todo_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo_item {
+  margin: 0.1em 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 10px;
+  user-select: none;
+  background-color: var(--color-grey);
+}
+
+.todo_date {
+  margin: 0;
+}
+.todo_checkbox {
+  width: 25px;
+  height: 25px;
+}
+.todo_button-remove {
+  padding: 0.4em;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.todo_checkbox:checked ~ .todo_description {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.todo_checkbox:checked ~ .todo_date {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.todo_checkbox:checked ~ .todo_button-remove {
+  pointer-events: auto;
+  opacity: 1;
+  background-color: var(--color-red);
+}
+
+.todo_count {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+.todo_count-title {
+  font-size: 1.5rem;
+  font-family: 'Nanum Brush Script';
+  text-decoration: underline;
+}

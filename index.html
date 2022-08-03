@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="index.js" type="module"></script>
+    <title>TODO LIST</title>
+  </head>
+
+  <body>
+    <div class="root">
+      <div class="container">
+        <div class="todo">
+          <h1 class="todo_title">TODO LIST</h1>
+
+          <div class="todo_add-block">
+            <input
+              type="text"
+              class="todo_input-add"
+              placeholder="&#9998; enter todo.... "
+              data-input-add
+            />
+          </div>
+
+          <div class="todo_buttons">
+            <button type="button" class="todo_button-add" data-button-add>
+              ADD
+            </button>
+            <button
+              type="button"
+              class="todo_button-deletelast"
+              data-button-deletelast
+            >
+              DeleteLast
+            </button>
+            <button
+              type="button"
+              class="todo_button-deleteall"
+              data-button-deleteall
+            >
+              Clear
+            </button>
+          </div>
+
+          <div class="todo_buttons">
+            <input
+              type="text"
+              class="todo_input-search"
+              placeholder="search todo..."
+              data-input-search
+            />
+            <button
+              type="button"
+              class="todo_button-showall"
+              data-button-showall
+            >
+              All
+            </button>
+            <button
+              type="button"
+              class="todo_button-showcomp"
+              data-button-showcomp
+            >
+              Completed
+            </button>
+          </div>
+
+          <p class="todo_count">
+            <span class="todo_count-title"
+              >Active:<span
+                class="todo_count-text"
+                data-count-active
+              ></span></span
+            ><span class="todo_count-title"
+              >Completed:<span
+                class="todo_count-text"
+                data-count-completed
+              ></span
+            ></span>
+          </p>
+
+          <div class="todo_container" data-todo-container></div>
+        </div>
+      </div>
+    </div>
+    <template data-todo-item-template>
+      <div class="todo_item" data-todo-item>
+        <input type="checkbox" class="todo_checkbox" data-todo-checkbox />
+
+        <p class="todo_description" data-todo-description>Do something</p>
+
+        <p class="todo_date" data-todo-date>date</p>
+        <button class="todo_button-remove" data-button-remove>&#10008;</button>
+      </div>
+    </template>
+  </body>
+</html>

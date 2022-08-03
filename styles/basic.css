@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background: var(--color-main);
+  background: linear-gradient(
+      62deg,
+      rgba(81, 50, 82) 13%,
+      rgba(255, 122, 151, 0.5) 4%
+    ),
+    linear-gradient(
+      44deg,
+      rgba(0, 43, 99, 0.07922090238615942) 39%,
+      rgba(242, 140, 143, 0.5) 18%
+    ),
+    linear-gradient(
+      118deg,
+      rgba(9, 20, 2, 0.032) 40%,
+      rgba(247, 155, 187, 0.5) 54%
+    ),
+    linear-gradient(
+      58deg,
+      rgba(151, 218, 16, 0.945) 83%,
+      rgba(249, 156, 142, 0.5) 23%
+    );
+  background-blend-mode: normal, lighten, multiply, hard-light;
+}
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+}
