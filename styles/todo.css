@@ -118,3 +118,6 @@
   font-family: 'Nanum Brush Script';
   text-decoration: underline;
 }
+.checked {
+  background-color: var(--color-checked);
+}
