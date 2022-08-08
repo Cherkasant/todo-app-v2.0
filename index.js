@@ -51,7 +51,10 @@ function createTodoItem(id, date, isChecked, text) {
   const todoDate = todoElement.querySelector('[data-todo-date]');
   todoDate.textContent = date;
   const todoRemoveButton = todoElement.querySelector('[data-button-remove]');
-
+  const todoItem = todoElement.querySelector('[data-todo-item]');
+  if (isChecked === true) {
+    todoItem.classList.add('checked');
+  }
   checkbox.addEventListener('change', (event) => {
     todos = todos.map((el) => {
       if (el.id === id) {
