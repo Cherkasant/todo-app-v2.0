@@ -3,7 +3,7 @@ export function getDate() {
   const dateResult = `${date.getHours()}:${String(date.getMinutes()).padStart(
     2,
     '0'
-  )} ${date.toLocaleString('en', { day: 'numeric' })} ${date.toLocaleString(
+  )}-${date.toLocaleString('en', { day: 'numeric' })}-${date.toLocaleString(
     'en',
     { month: 'long' }
   )}`;
