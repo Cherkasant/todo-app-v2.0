@@ -2,7 +2,7 @@
 
 ---
 
-**A simple todo list app built in HTML,CSS,JS ==>[TODO APP](https://cherkasant.github.io/Level_3/ 'Click me').**
+**A simple todo list app built in HTML,CSS,JS ==>[TODO APP](https://cherkasant.github.io/todo-app-v2.0/ 'Click me').**
 
 ---
 
