@@ -3,7 +3,7 @@
 }
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   background: var(--color-main);
   background: linear-gradient(
       62deg,
