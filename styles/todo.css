@@ -69,18 +69,26 @@
 
 .todo_item {
   margin: 0.1em 0;
-
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 5fr 0.25fr;
+  grid-auto-rows: 1fr 1fr;
   align-items: center;
   padding: 0.5em;
   border-radius: 10px;
   user-select: none;
   background-color: var(--color-grey);
 }
-
+.todo_box {
+  display: flex;
+  flex-direction: column;
+}
+.todo_description {
+  margin-bottom: 0;
+  font-size: 1.2em;
+}
 .todo_date {
   margin: 0;
+  font-size: 0.8em;
 }
 .todo_checkbox {
   width: 25px;
@@ -93,11 +101,7 @@
   opacity: 0.5;
 }
 
-.todo_checkbox:checked ~ .todo_description {
-  text-decoration: line-through;
-  opacity: 0.5;
-}
-.todo_checkbox:checked ~ .todo_date {
+.todo_checkbox:checked ~ todo_box {
   text-decoration: line-through;
   opacity: 0.5;
 }
