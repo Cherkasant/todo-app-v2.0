@@ -101,7 +101,7 @@
   opacity: 0.5;
 }
 
-.todo_checkbox:checked ~ todo_box {
+.todo_checkbox:checked ~ .todo_box {
   text-decoration: line-through;
   opacity: 0.5;
 }
