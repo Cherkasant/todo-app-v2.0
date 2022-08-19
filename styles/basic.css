@@ -26,6 +26,8 @@ body {
       rgba(249, 156, 142, 0.5) 23%
     );
   background-blend-mode: normal, lighten, multiply, hard-light;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .container {
   margin: 0 auto;
