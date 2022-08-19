@@ -11,7 +11,7 @@ const buttonDeleteLast = document.querySelector('[data-button-deletelast]');
 const spanCountActive = document.querySelector('[data-count-active]');
 const spanCountCompleted = document.querySelector('[data-count-completed]');
 
-export const allElements = {
+export {
   todoItemTemplate,
   todosContainer,
   inputAdd,
