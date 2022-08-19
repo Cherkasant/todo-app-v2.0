@@ -1,4 +1,3 @@
-import { allElements } from './app/todoElements.js';
 import { getDate } from './app/dateFunction.js';
 import { getCount } from './app/countFunction.js';
 import {
@@ -6,9 +5,7 @@ import {
   setNameFromLocalStorage,
   LOCAL_STORAGE_KEY,
 } from './app/localStorage.js';
-
-//object destructuring
-const {
+import {
   todoItemTemplate,
   todosContainer,
   inputAdd,
@@ -20,7 +17,7 @@ const {
   buttonDeleteLast,
   spanCountActive,
   spanCountCompleted,
-} = allElements;
+} from './app/todoElements.js';
 
 //checking localStorage by key
 let todos = getNameFromStorage(LOCAL_STORAGE_KEY) || [];
