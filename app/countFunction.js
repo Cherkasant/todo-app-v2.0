@@ -1,5 +1,5 @@
 export function getCount(todos) {
-  return (todos = todos.reduce(
+  return todos.reduce(
     (total, current) => {
       if (current.isChecked) {
         total.completed += 1;
