@@ -24,13 +24,14 @@ let todos = getNameFromStorage(LOCAL_STORAGE_KEY) || [];
 
 //creating an event on the Add key
 buttonAdd.addEventListener('click', () => {
-  if (inputAdd.value.trim()) {
+  const input=inputAdd.value.trim();
+  if (input) {
     //creating a card object
     const todo = {
       id: todos.length + 1,
       date: getDate(),
       isChecked: false,
-      text: inputAdd.value.trim(),
+      text: input,
     };
     todos.push(todo);
     appendAndSet();
