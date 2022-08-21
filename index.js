@@ -28,7 +28,7 @@ buttonAdd.addEventListener('click', () => {
   if (input) {
     //creating a card object
     const todo = {
-      id: todos.length + 1,
+      id: Date.now(),
       date: getDate(),
       isChecked: false,
       text: input,
