@@ -9,5 +9,5 @@ export function getCount(todos) {
       return total;
     },
     { active: 0, completed: 0 }
-  ));
+  );
 }
