@@ -24,10 +24,21 @@ let todos = getNameFromStorage(LOCAL_STORAGE_KEY) || [];
 
 //creating an event on the Add key
 buttonAdd.addEventListener('click', () => {
-  const input=inputAdd.value.trim();
+  addToDo();
+});
+
+//creating an event on input wih Enter key
+inputAdd.addEventListener('keyup', (e) => {
+  if (e.code === 'Enter') {
+    addToDo();
+  }
+});
+
+//creating a card object
+function addToDo() {
+  const input = inputAdd.value.trim();
   if (input) {
-    //creating a card object
-    const todo = {
+      const todo = {
       id: Date.now(),
       date: getDate(),
       isChecked: false,
@@ -37,7 +48,7 @@ buttonAdd.addEventListener('click', () => {
     appendAndSet();
     inputAdd.value = '';
   }
-});
+}
 
 //creating a card template
 function createTodoItem(id, date, isChecked, text) {
