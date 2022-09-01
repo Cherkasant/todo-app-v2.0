@@ -1,12 +1,13 @@
 export function getDate() {
   const date = new Date(Date.now());
-  const dateResult = `${date.toLocaleString('en', {
-    day: 'numeric',
-  })} ${date.toLocaleString('en', {
-    month: 'long',
-  })},${date.getHours()}:${String(date.getMinutes()).padStart(
-    2,
-    '0'
-  )}:${date.toLocaleString('en', { second: '2-digit' })}`;
+  let hours = date.getDay();
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
+  let day = date.getDay();
+  let month = date.toLocaleString('en', { month: 'long' });
+  if (hours < 10) hours = '0' + hours;
+  if (minutes < 10) minutes = '0' + minutes;
+  if (seconds < 10) seconds = '0' + seconds;
+  const dateResult = `${day} ${month},${hours}:${minutes}:${seconds}`;
   return dateResult;
 }
